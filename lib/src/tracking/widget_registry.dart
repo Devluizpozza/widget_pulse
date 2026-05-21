@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
+
 import '../metrics/rebuild_metrics.dart';
 
-class WidgetRegistry {
+class WidgetRegistry extends ChangeNotifier {
   static final WidgetRegistry instance = WidgetRegistry._internal();
 
   WidgetRegistry._internal();
@@ -9,6 +11,13 @@ class WidgetRegistry {
 
   Map<String, RebuildMetrics> get widgets => _widgets;
 
+  int get totalRebuilds {
+    return _widgets.values.fold(
+      0,
+      (sum, item) => sum + item.rebuildCount,
+    );
+  }
+
   void register(String widgetName) {
     final metrics = _widgets.putIfAbsent(
       widgetName,
@@ -16,5 +25,7 @@ class WidgetRegistry {
     );
 
     metrics.registerRebuild();
+
+    notifyListeners();
   }
 }

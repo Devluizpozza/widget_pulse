@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../overlay/pulse_overlay.dart';
+
 class WidgetPulse extends StatelessWidget {
   final Widget child;
   final bool enabled;
@@ -19,6 +21,7 @@ class WidgetPulse extends StatelessWidget {
     return Stack(
       children: [
         child,
+        const PulseOverlay(),
       ],
     );
   }
