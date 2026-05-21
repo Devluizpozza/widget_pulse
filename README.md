@@ -1,39 +1,57 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Widget Pulse
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+Visualize rebuilds de widgets Flutter em tempo real.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+O **Widget Pulse** é uma biblioteca de developer tooling para Flutter focada em análise visual de rebuilds de widgets, ajudando desenvolvedores a identificar gargalos de renderização, excesso de rebuilds e problemas de performance durante o desenvolvimento.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A biblioteca fornece overlays visuais, métricas em tempo real e ferramentas de profiling leves e fáceis de integrar.
 
-## Features
+---
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+# ✨ Features
 
-## Getting started
+## Disponível no MVP
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+- ✅ Rastreamento de rebuilds em tempo real
+- ✅ Contador de rebuilds por widget
+- ✅ Overlay visual de debug
+- ✅ Arquitetura leve e extensível
+- ✅ Integração plug-and-play
+- ✅ Baixo impacto em performance
 
-## Usage
+---
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+## Roadmap
 
-```dart
-const like = 'sample';
-```
+### V0.2
+- Heatmap visual de rebuilds
+- Intensidade de rebuild
+- Indicadores visuais por frequência
 
-## Additional information
+### V0.3
+- Análise por frame
+- Detecção de widgets lentos
+- Métricas de performance
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+### V1.0
+- Integração com Flutter DevTools
+- Timeline visual
+- Inspeção de árvore de widgets
+- Histórico de rebuilds
+- Exportação de métricas
+
+---
+
+# 📸 Preview
+
+> GIFs, screenshots e exemplos visuais serão adicionados em breve.
+
+---
+
+# 🚀 Instalação
+
+Adicione a dependência no seu `pubspec.yaml`:
+
+```yaml
+dependencies:
+  widget_pulse: ^0.1.0

@@ -1,5 +1,5 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+library widget_pulse;
+
+export 'src/widgets/widget_pulse.dart';
+export 'src/core/pulse_controller.dart';
+export 'src/core/pulse_config.dart';
