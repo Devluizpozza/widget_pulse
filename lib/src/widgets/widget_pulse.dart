@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../overlay/pulse_overlay.dart';
+import '../tracking/pulse_tree_builder.dart';
 
 class WidgetPulse extends StatelessWidget {
   final Widget child;
@@ -20,7 +21,10 @@ class WidgetPulse extends StatelessWidget {
 
     return Stack(
       children: [
-        child,
+        PulseTreeBuilder(
+          child: child,
+        ),
+
         const PulseOverlay(),
       ],
     );
