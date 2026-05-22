@@ -1,4 +1,6 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+import '../overlay/pulse_overlay.dart';
 
 class TrackingFilter {
   static bool shouldTrack(Widget widget) {
@@ -8,8 +10,8 @@ class TrackingFilter {
       SizedBox,
       Padding,
       Center,
-      Align,
       Container,
+      PulseOverlay,
     };
 
     return !ignoredWidgets.contains(widget.runtimeType);
