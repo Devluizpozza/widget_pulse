@@ -14,4 +14,12 @@ class RebuildMetrics {
     rebuildCount++;
     lastRebuild = DateTime.now();
   }
+
+  double get intensity {
+    if (rebuildCount >= 100) {
+      return 1.0;
+    }
+
+    return rebuildCount / 100;
+  }
 }
