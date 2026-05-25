@@ -20,10 +20,7 @@ class VisualTrackedWidget extends StatefulWidget {
 class _VisualTrackedWidgetState extends State<VisualTrackedWidget> {
   bool highlighted = false;
 
-  @override
-  Widget build(BuildContext context) {
-    final metrics = WidgetRegistry.instance.widgets[widget.name];
-
+  void _triggerHighlight() {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) {
         setState(() {
@@ -39,6 +36,23 @@ class _VisualTrackedWidgetState extends State<VisualTrackedWidget> {
         });
       }
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _triggerHighlight();
+  }
+
+  @override
+  void didUpdateWidget(VisualTrackedWidget oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    _triggerHighlight();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final metrics = WidgetRegistry.instance.widgets[widget.name];
 
     final intensity = metrics?.intensity ?? 0;
 

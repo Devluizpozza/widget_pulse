@@ -27,7 +27,7 @@ class CounterPage extends StatefulWidget {
   State<CounterPage> createState() => _CounterPageState();
 }
 
-class _CounterPageState extends State<CounterPage> {
+class _CounterPageState extends State<CounterPage> with PulseStateMixin {
   int counter = 0;
 
   @override
