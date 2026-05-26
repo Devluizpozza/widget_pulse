@@ -13,6 +13,8 @@ jobs:
       id-token: write
       contents: read
 
+    environment: pub.dev
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,6 +24,9 @@ jobs:
         with:
           flutter-version: 3.41.9
           channel: stable
+
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
 
       - name: Install dependencies
         run: flutter pub get
@@ -36,4 +41,6 @@ jobs:
         run: flutter test
 
       - name: Publish package
-        run: flutter pub publish -f
+        env:
+          PUB_HOSTED_URL: https://pub.dev
+        run: dart pub publish --force
