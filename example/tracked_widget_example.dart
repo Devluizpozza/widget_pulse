@@ -4,8 +4,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:widget_pulse/widget_pulse.dart';
 
-
-
 class PulseExampleApp extends StatelessWidget {
   const PulseExampleApp({super.key});
 

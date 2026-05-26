@@ -24,7 +24,6 @@ class WidgetPulse extends StatelessWidget {
         PulseTreeBuilder(
           child: child,
         ),
-
         const PulseOverlay(),
       ],
     );

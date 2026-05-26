@@ -72,7 +72,6 @@ class _VisualTrackedWidgetState extends State<VisualTrackedWidget> {
           ),
           child: widget.child,
         ),
-
         Positioned(
           top: -8,
           right: -8,
