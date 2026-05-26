@@ -35,26 +35,19 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 
 <!-- Adicionar GIF aqui -->
 <p align="center">
-  <img src="docs/gifs/rebuild-overlay.gif" width="800"/>
+ <img src="docs/gifs/overlay.gif" width="800"/>
 </p>
 
 ---
 
-## Contador de Rebuilds
+## exemplo avançado de rebuild
 
 <!-- Adicionar GIF aqui -->
 <p align="center">
-  <img src="docs/gifs/rebuild-counter.gif" width="800"/>
+  <img src="docs/gifs/multi_overlay.gif" width="800"/>
 </p>
 
 ---
-
-## Tracking em Tempo Real
-
-<!-- Adicionar GIF aqui -->
-<p align="center">
-  <img src="docs/gifs/live-tracking.gif" width="800"/>
-</p>
 
 ---
 
