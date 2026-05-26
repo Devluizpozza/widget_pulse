@@ -1,8 +1,6 @@
-import 'package:flutter/foundation.dart';
-
 import '../metrics/rebuild_metrics.dart';
 
-class WidgetRegistry extends ChangeNotifier {
+class WidgetRegistry {
   static final WidgetRegistry instance = WidgetRegistry._internal();
 
   WidgetRegistry._internal();
@@ -25,13 +23,9 @@ class WidgetRegistry extends ChangeNotifier {
     );
 
     metrics.registerRebuild();
-
-    notifyListeners();
   }
 
   void unregister(String widgetName) {
-    if (_widgets.remove(widgetName) != null) {
-      notifyListeners();
-    }
+    _widgets.remove(widgetName);
   }
 }
