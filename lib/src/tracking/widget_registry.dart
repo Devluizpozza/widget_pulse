@@ -28,4 +28,10 @@ class WidgetRegistry extends ChangeNotifier {
 
     notifyListeners();
   }
+
+  void unregister(String widgetName) {
+    if (_widgets.remove(widgetName) != null) {
+      notifyListeners();
+    }
+  }
 }
