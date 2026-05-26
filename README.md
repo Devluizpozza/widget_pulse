@@ -34,19 +34,14 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 ## Overlay de Rebuilds
 
 <!-- Adicionar GIF aqui -->
-<p align="center">
-   <img src="lib/docs/gifs/overlay.gif" width="800"/>
-</p>
+![Overlay de Rebuilds](docs/gifs/overlay.gif)
 
 ---
 
 ## exemplo avançado de rebuild
 
 <!-- Adicionar GIF aqui -->
-<p align="center">
-  <img src="lib/docs/gifs/multi_overlay.gif" width="800"/>
-</p>
-
+![Exemplo avançado de rebuild](docs/gifs/multi_overlay.gif)
 ---
 
 ---
