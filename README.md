@@ -1,16 +1,23 @@
 # Widget Pulse
 
-Visualize rebuilds de widgets Flutter em tempo real.
+Visualize Flutter widget rebuilds in real time.
 
-O **Widget Pulse** é uma biblioteca de developer tooling para Flutter focada em análise visual de rebuilds de widgets, ajudando desenvolvedores a identificar gargalos de renderização, excesso de rebuilds e problemas de performance durante o desenvolvimento.
+O **Widget Pulse** é uma biblioteca open-source de developer tooling para Flutter focada em **runtime visual instrumentation** e profiling visual de rebuilds.
 
-A biblioteca fornece overlays visuais, métricas em tempo real e ferramentas de profiling leves e fáceis de integrar.
+A proposta da biblioteca é ajudar desenvolvedores Flutter a identificar:
+
+- rebuilds excessivos
+- gargalos de renderização
+- widgets com alto custo de reconstrução
+- problemas de performance durante desenvolvimento
+
+Tudo isso através de overlays visuais, métricas em tempo real e ferramentas leves de observabilidade visual.
 
 ---
 
 # ✨ Features
 
-## Disponível no MVP
+## ✅ Disponível no MVP
 
 - ✅ Rastreamento de rebuilds em tempo real
 - ✅ Contador de rebuilds por widget
@@ -18,43 +25,46 @@ A biblioteca fornece overlays visuais, métricas em tempo real e ferramentas de 
 - ✅ Arquitetura leve e extensível
 - ✅ Integração plug-and-play
 - ✅ Baixo impacto em performance
-
----
-
-## 🛣️ Roadmap
-
-### V0.2
-- Heatmap visual de rebuilds
-- Intensidade de rebuild
-- Indicadores visuais por frequência
-
-### V0.3
-- Análise por frame
-- Detecção de widgets lentos
-- Métricas de performance
-
-### V1.0
-- Integração com Flutter DevTools
-- Timeline visual
-- Inspeção de árvore de widgets
-- Histórico de rebuilds
-- Exportação de métricas
+- ✅ Developer Experience focada em simplicidade
 
 ---
 
 # 📸 Preview
 
-> GIFs, screenshots e exemplos visuais serão adicionados em breve.
+## Overlay de Rebuilds
+
+<!-- Adicionar GIF aqui -->
+<p align="center">
+  <img src="docs/gifs/rebuild-overlay.gif" width="800"/>
+</p>
+
+---
+
+## Contador de Rebuilds
+
+<!-- Adicionar GIF aqui -->
+<p align="center">
+  <img src="docs/gifs/rebuild-counter.gif" width="800"/>
+</p>
+
+---
+
+## Tracking em Tempo Real
+
+<!-- Adicionar GIF aqui -->
+<p align="center">
+  <img src="docs/gifs/live-tracking.gif" width="800"/>
+</p>
 
 ---
 
 # 🚀 Instalação
 
-Adicione a dependência no seu `pubspec.yaml`:
+Adicione no seu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  widget_pulse: ^0.1.0
+  widget_pulse: ^0.1.0-alpha.1
 ```
 
 Depois execute:
@@ -67,7 +77,7 @@ flutter pub get
 
 # ⚡ Quick Start
 
-Basta envolver sua aplicação com `WidgetPulse`.
+Envolva sua aplicação com `WidgetPulse`.
 
 ```dart
 import 'package:flutter/material.dart';
@@ -163,7 +173,14 @@ Sempre que o Flutter executa:
 build()
 ```
 
-o Widget Pulse registra métricas de rebuild e disponibiliza essas informações através de overlays visuais e ferramentas de debug.
+o Widget Pulse:
+
+- registra métricas de rebuild
+- contabiliza frequência de reconstruções
+- disponibiliza informações visuais via overlays
+- ajuda a identificar widgets problemáticos
+
+Tudo isso sem necessidade de configuração complexa.
 
 ---
 
@@ -233,28 +250,34 @@ Sem necessidade de ferramentas pesadas ou configuração complexa.
 
 ---
 
-# 🛣️ Roadmap Técnico
+# 🛣️ Roadmap
 
-## Estrutura Inicial
+## 🔹 V0.2
 
-- Sistema base de tracking
-- Overlay manager
-- Registro de métricas
-- Tracking por widget
+- Heatmap visual de rebuilds
+- Intensidade de rebuild
+- Indicadores visuais por frequência
+- Overlay inteligente
 
-## Médio Prazo
+---
 
-- Heatmaps
-- Gráficos de rebuild
-- Integração com DevTools
-- Snapshot de árvore de widgets
+## 🔹 V0.3
 
-## Longo Prazo
+- Análise por frame
+- Detecção de widgets lentos
+- Métricas de performance
+- Snapshot de rebuilds
 
-- Timeline profiler
-- Comparação de sessões
-- Exportação de relatórios
-- Plugin DevTools oficial
+---
+
+## 🔹 V1.0
+
+- Integração com Flutter DevTools
+- Timeline visual
+- Inspeção de árvore de widgets
+- Histórico de rebuilds
+- Exportação de métricas
+- Performance heatmaps
 
 ---
 
@@ -263,7 +286,7 @@ Sem necessidade de ferramentas pesadas ou configuração complexa.
 Clone o projeto:
 
 ```bash
-git clone https://github.com/seu-usuario/widget_pulse.git
+git clone https://github.com/Devluizpozza/widget_pulse.git
 ```
 
 Entre na pasta:
@@ -375,6 +398,7 @@ Você pode contribuir com:
 ## Como contribuir
 
 1. Faça um fork do projeto
+
 2. Crie uma branch:
 
 ```bash
@@ -382,6 +406,7 @@ git checkout -b feature/minha-feature
 ```
 
 3. Commit suas alterações
+
 4. Abra um Pull Request
 
 ---
@@ -390,10 +415,23 @@ git checkout -b feature/minha-feature
 
 🚧 Em desenvolvimento ativo.
 
-O projeto está atualmente na fase inicial de arquitetura e implementação do sistema de tracking.
+Atualmente o Widget Pulse encontra-se em fase alpha com foco na estabilização do sistema de tracking visual e observabilidade de rebuilds.
 
 ---
 
 # 📄 Licença
 
 MIT License
+
+---
+
+# ⭐ Apoie o Projeto
+
+Se o Widget Pulse te ajudar de alguma forma:
+
+- deixe uma ⭐ no repositório
+- compartilhe feedbacks
+- abra issues
+- contribua com melhorias
+
+Open-source cresce com comunidade 🚀
