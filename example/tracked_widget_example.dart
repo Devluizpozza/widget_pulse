@@ -156,7 +156,7 @@ class _DashboardExamplePageState extends State<DashboardExamplePage>
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.05),
+                color: Colors.white.withValues(alpha: .05),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Column(
@@ -261,10 +261,10 @@ class _MetricCard extends StatelessWidget {
       width: 180,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.15),
+        color: color.withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: color.withOpacity(0.4),
+          color: color.withValues(alpha: 0.4),
         ),
       ),
       child: Column(

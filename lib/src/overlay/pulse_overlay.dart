@@ -16,14 +16,14 @@ class PulseOverlay extends StatelessWidget {
             margin: const EdgeInsets.all(12),
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.82),
+              color: Colors.black.withValues(alpha: 0.82),
               borderRadius: BorderRadius.circular(14),
               border: Border.all(
-                color: Colors.white.withOpacity(0.08),
+                color: Colors.white.withValues(alpha: 0.08),
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.4),
+                  color: Colors.black.withValues(alpha: 0.4),
                   blurRadius: 12,
                   offset: const Offset(0, 4),
                 ),
@@ -93,7 +93,7 @@ class PulseOverlay extends StatelessWidget {
                         Text(
                           'No tracked widgets',
                           style: TextStyle(
-                            color: Colors.white.withOpacity(0.6),
+                            color: Colors.white.withValues(alpha: 0.6),
                             fontSize: 11,
                           ),
                         ),
@@ -109,8 +109,8 @@ class PulseOverlay extends StatelessWidget {
                                   item.widgetName,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
-                                    color: Colors.white.withOpacity(
-                                      0.85,
+                                    color: Colors.white.withValues(
+                                      alpha: 0.85,
                                     ),
                                     fontSize: 11,
                                   ),
@@ -186,7 +186,7 @@ class _MetricTile extends StatelessWidget {
           child: Text(
             label,
             style: TextStyle(
-              color: Colors.white.withOpacity(0.7),
+              color: Colors.white.withValues(alpha: 0.7),
               fontSize: 11,
             ),
           ),

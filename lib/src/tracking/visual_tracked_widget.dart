@@ -64,7 +64,7 @@ class _VisualTrackedWidgetState extends State<VisualTrackedWidget> {
           decoration: BoxDecoration(
             border: Border.all(
               color: highlighted
-                  ? Colors.red.withOpacity(0.3 + (intensity * 0.7))
+                  ? Colors.red.withValues(alpha: 0.3 + (intensity * 0.7))
                   : Colors.transparent,
               width: 2,
             ),
