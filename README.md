@@ -35,7 +35,7 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 
 <!-- Adicionar GIF aqui -->
 <p align="center">
- <img src="docs/gifs/overlay.gif" width="800"/>
+   <img src="lib/docs/gifs/overlay.gif" width="800"/>
 </p>
 
 ---
@@ -44,7 +44,7 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 
 <!-- Adicionar GIF aqui -->
 <p align="center">
-  <img src="docs/gifs/multi_overlay.gif" width="800"/>
+  <img src="lib/docs/gifs/multi_overlay.gif" width="800"/>
 </p>
 
 ---
