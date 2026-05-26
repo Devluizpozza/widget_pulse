@@ -34,7 +34,7 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 ## Overlay de Rebuilds
 
 <!-- Adicionar GIF aqui -->
-![Overlay de Rebuilds](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/docs/gifs/overlay.gif)
+![Overlay de Rebuilds](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/doc/gifs/overlay.gif)
 
 ---
 
@@ -43,7 +43,7 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 ## exemplo avançado de rebuild
 
 <!-- Adicionar GIF aqui -->
-![Exemplo avançado](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/docs/gifs/multi_overlay.gif)
+![Exemplo avançado](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/doc/gifs/multi_overlay.gif)
 ---
 
 ---
