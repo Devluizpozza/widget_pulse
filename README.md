@@ -38,6 +38,8 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 
 ---
 
+---
+
 ## exemplo avançado de rebuild
 
 <!-- Adicionar GIF aqui -->
