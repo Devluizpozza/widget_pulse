@@ -34,14 +34,14 @@ Tudo isso através de overlays visuais, métricas em tempo real e ferramentas le
 ## Overlay de Rebuilds
 
 <!-- Adicionar GIF aqui -->
-![Overlay de Rebuilds](docs/gifs/overlay.gif)
+![Overlay de Rebuilds](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/docs/gifs/overlay.gif)
 
 ---
 
 ## exemplo avançado de rebuild
 
 <!-- Adicionar GIF aqui -->
-![Exemplo avançado de rebuild](docs/gifs/multi_overlay.gif)
+![Exemplo avançado](https://raw.githubusercontent.com/Devluizpozza/widget_pulse/main/docs/gifs/multi_overlay.gif)
 ---
 
 ---
